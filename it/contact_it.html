@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contatta Exceed Group</title>
+  <link rel="stylesheet" href="../static/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index_it.html" class="logo">
+        <img src="../static/logos/logo_exceed_group.png" alt="Logo Exceed Group" style="height:110px;"/>
+      </a>
+      <span id="navToggle" class="toggle">☰</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index_it.html">Home</a></li>
+        <li><a href="about_it.html">Chi Siamo</a></li>
+        <li><a href="products_it.html">Prodotti</a></li>
+        <li><a href="pitch_it.html">Pitch</a></li>
+        <li><a href="contact_it.html" class="active">Contatti</a></li>
+        <li class="lang-switch">
+          <a href="../contact.html">
+            <img src="../static/icons/flag_en.svg" alt="English" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container text-center">
+      <h1>Contattaci</h1>
+      <p>Saremo felici di ascoltarti e capire come possiamo superare le tue aspettative.</p>
+    </div>
+  </header>
+
+  <!-- Contact Info Section -->
+  <section>
+    <div class="container text-center" style="max-width:600px;">
+      <div class="card" style="padding:2rem;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+        <p style="font-size:1.1rem; margin-bottom:2rem;">
+          Che tu voglia scoprire la nostra tecnologia, richiedere una demo o proporre una collaborazione,
+          saremo felici di ascoltarti. Contatta direttamente il nostro founder:
+        </p>
+        <h2 style="color:#2e64ff;margin-bottom:1rem;">Andrea Cosa</h2>
+        <p style="font-size:1.1rem;margin-bottom:0.5rem;">
+          📞 <a href="tel:+393480857282" style="color:#2e64ff;text-decoration:none;">+39 348 0857282</a>
+        </p>
+        <p style="font-size:1.1rem;">
+          📧 <a href="mailto:andrea.cosa@exceedintelligence.ai" style="color:#2e64ff;text-decoration:none;">andrea.cosa@exceedintelligence.ai</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <!--
+  <section>
+    <div class="container" style="max-width:600px;">
+      
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ 'success' if category == 'success' else 'error' }}">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <form action="{{ url_for('contact_it') }}" method="post" class="card" style="background:#fff;">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required
+          style="width:100%;padding:0.75rem;border:1px solid #ccc;border-radius:var(--radius);margin-bottom:1rem;"/>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required
+          style="width:100%;padding:0.75rem;border:1px solid #ccc;border-radius:var(--radius);margin-bottom:1rem;"/>
+
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" rows="6" required
+          style="width:100%;padding:0.75rem;border:1px solid #ccc;border-radius:var(--radius);margin-bottom:1rem;"></textarea>
+
+        <button class="btn" type="submit" style="border:none;cursor:pointer;">Invia Messaggio</button>
+      </form>
+    </div>
+  </section>
+  -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Exceed Group. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="../static/scripts.js"></script>
+</body>
+</html>
